@@ -73,14 +73,15 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #f58764;
+  color: #122440;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 10px 15px;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #f26234;
+  color: #070e18;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
@@ -110,7 +111,7 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: #f58764;
+    background-color: #122440;
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
@@ -126,7 +127,7 @@ aside {
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
-    color: white;
+    color: #f58764;
   }
   .navbar-default.affix {
     background-color: #122440;
@@ -138,7 +139,7 @@ aside {
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #f26234;
+    color: #070e18;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {

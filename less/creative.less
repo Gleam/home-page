@@ -83,14 +83,15 @@ aside {
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
-        color: @theme-primary;
+        color: @theme-secondary;
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken(@theme-primary, 10%);
+            color: darken(@theme-secondary, 10%);
         }
+        padding: 10px 15px;
     }
     .navbar-header .navbar-toggle {
         font-weight: 700;
@@ -123,7 +124,7 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: @theme-primary;
+        background-color: @theme-secondary;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
             color: fade(white, 70%);
@@ -136,7 +137,7 @@ aside {
         .nav > li > a:focus {
             color: rgba(255,255,255,.7);
             &:hover {
-                color: white;
+                color: @theme-primary;
             }
         }
         &.affix {
@@ -147,7 +148,7 @@ aside {
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken(@theme-primary, 10%);
+                    color: darken(@theme-secondary, 10%);
                 }
             }
             .nav > li > a,
