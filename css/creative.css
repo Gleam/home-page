@@ -3,8 +3,8 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-html,
-body {
+body,
+html {
   height: 100%;
   width: 100%;
 }
@@ -25,8 +25,8 @@ a {
   transition: all 0.35s;
   color: #f58764;
 }
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   color: #f26234;
 }
 h1,
@@ -79,8 +79,8 @@ aside {
   text-transform: uppercase;
   padding: 10px 15px;
 }
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
+.navbar-default .navbar-header .navbar-brand:focus,
+.navbar-default .navbar-header .navbar-brand:hover {
   color: #070e18;
 }
 .navbar-default .navbar-header .navbar-toggle {
@@ -89,24 +89,24 @@ aside {
   color: #f58764;
   text-transform: uppercase;
 }
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
+.navbar-default .nav > li > a:focus,
+.navbar-default .nav > li > a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
 }
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
+.navbar-default .nav > li > a:focus:hover,
+.navbar-default .nav > li > a:hover {
   color: #f58764;
 }
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
+.navbar-default .nav > li.active > a:focus,
+.navbar-default .nav > li.active > a {
   color: #f58764 !important;
   background-color: transparent;
 }
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
+.navbar-default .nav > li.active > a:focus:hover,
+.navbar-default .nav > li.active > a:hover {
   background-color: #122440;
 }
 @media (min-width: 768px) {
@@ -117,8 +117,8 @@ aside {
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
-  .navbar-default .navbar-header .navbar-brand:hover,
-  .navbar-default .navbar-header .navbar-brand:focus {
+  .navbar-default .navbar-header .navbar-brand:focus,
+  .navbar-default .navbar-header .navbar-brand:hover {
     color: white;
   }
   .navbar-default .nav > li > a,
@@ -137,8 +137,8 @@ aside {
     color: #f58764;
     font-size: 14px;
   }
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
+  .navbar-default.affix .navbar-header .navbar-brand:focus,
+  .navbar-default.affix .navbar-header .navbar-brand:hover {
     color: #070e18;
   }
   .navbar-default.affix .nav > li > a,
@@ -166,7 +166,7 @@ header {
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
+  padding: 100px 15px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
@@ -418,6 +418,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+@media (max-width: 768px) {
+  .responsive-logos {
+    text-align: center;
+  }
+}
 .team-picture {
   border-radius: 50%;
   width: 200px;
@@ -426,6 +431,7 @@ body {
 .mentor-picture {
   height: 80px;
   width: 224px;
+  padding-bottom: 5px;
 }
 .primary {
   color: #f58764;
