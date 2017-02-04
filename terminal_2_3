@@ -1,0 +1,86 @@
+Last login: Fri Feb  3 17:30:17 on ttys000
+MacBook-Pro:~ Logic$ cd documents/projects/github/gleam/home-page
+-bash: cd: documents/projects/github/gleam/home-page: No such file or directory
+MacBook-Pro:~ Logic$ cd documents/projects/github/gleam/homepage
+MacBook-Pro:homepage Logic$ heroku login
+Enter your Heroku credentials.
+Email: contact@gleamtherapy.com	
+Password (typing will be hidden): 
+Logged in as contact@gleamtherapy.com
+MacBook-Pro:homepage Logic$ git init
+Reinitialized existing Git repository in /Users/Logic/Documents/Projects/GitHub/Gleam/homepage/.git/
+MacBook-Pro:homepage Logic$ heroku create
+Creating app... done, ⬢ tranquil-peak-19667
+https://tranquil-peak-19667.herokuapp.com/ | https://git.heroku.com/tranquil-peak-19667.git
+MacBook-Pro:homepage Logic$ heroku buildpacks:set http://github.com/heroku/heroku-buildpack-static.git
+ ▸    The buildpack http://github.com/heroku/heroku-buildpack-static.git is already set on your app.
+MacBook-Pro:homepage Logic$ git add .
+MacBook-Pro:homepage Logic$ git commit -m "fixed image and email in footer"
+[master 257796b] fixed image and email in footer
+ 4 files changed, 3071 insertions(+), 11 deletions(-)
+ create mode 100644 css/animate.85c0413445d5.css
+ rewrite img/header.jpg (87%)
+ copy img/{header.jpg => header_old.jpg} (100%)
+MacBook-Pro:homepage Logic$ git push heroku master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 961.15 KiB | 0 bytes/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Static HTML app detected
+remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+remote:                                  Dload  Upload   Total   Spent    Left  Speed
+remote: 100  838k  100  838k    0     0  13.0M      0 --:--:-- --:--:-- --:--:-- 13.2M
+remote: -----> Installed directory to /app/bin
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 4.4M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://whispering-temple-39765.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/whispering-temple-39765.git
+   3e2e5d7..257796b  master -> master
+MacBook-Pro:homepage Logic$ git add .
+MacBook-Pro:homepage Logic$ git commit -m "added more space before mentors"
+[master b22e233] added more space before mentors
+ 1 file changed, 3 insertions(+)
+MacBook-Pro:homepage Logic$ git push heroku master
+fatal: unable to access 'https://git.heroku.com/whispering-temple-39765.git/': Could not resolve host: git.heroku.com
+MacBook-Pro:homepage Logic$ git push heroku master
+fatal: unable to access 'https://git.heroku.com/whispering-temple-39765.git/': Could not resolve host: git.heroku.com
+MacBook-Pro:homepage Logic$ git push heroku master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Static HTML app detected
+remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+remote:                                  Dload  Upload   Total   Spent    Left  Speed
+remote: 100  838k  100  838k    0     0  11.1M      0 --:--:-- --:--:-- --:--:-- 11.0M
+remote: -----> Installed directory to /app/bin
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 4.4M
+remote: -----> Launching...
+remote:        Released v5
+remote:        https://whispering-temple-39765.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/whispering-temple-39765.git
+   257796b..b22e233  master -> master
+MacBook-Pro:homepage Logic$ 
